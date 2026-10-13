@@ -3,6 +3,7 @@ const orderButtons = document.querySelectorAll('.product-card__button');
 const closeDialogButton = document.getElementById('close-order-dialog');
 const selectedProductInput = document.getElementById('selected-product');
 
+
 orderButtons.forEach((button) => {
   button.addEventListener('click', () => {
     const productName = button.dataset.product;
