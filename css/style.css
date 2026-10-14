@@ -159,9 +159,11 @@ a:focus-visible {
   чтобы оно не растягивалось слишком сильно на широких экранах.
 */
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   background-color: var(--color-surface);
 }
-
 /*
   Оформляем текстовый логотип.
 */
@@ -503,3 +505,34 @@ html {
   border-radius: var(--radius-sm);
   font: inherit;
 }
+/* 
+   Кнопка
+    */
+
+.scroll-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 200;
+}
+
+.scroll-top--visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.scroll-top:hover {
+  background-color: var(--color-primary-dark);
+}
+
+
