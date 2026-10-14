@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Карточка товара учебного интернет-магазина: описание, характеристики, цена.">
+  <title>Товар 1 – Учебный интернет-магазин</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">ShopProject</a>
+
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="product.html">Товар</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="order.html">Заявка</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
+      <span class="breadcrumbs__current">Товар 1</span>
+    </nav>
+
+    <section class="section product-detail">
+
+      <div class="product-detail__media">
+        <img
+          class="product-detail__image"
+          src="images/placeholder.svg"
+          alt="Изображение товара 1"
+          width="400"
+          height="300"
+        >
+      </div>
+
+      <div class="product-detail__info">
+        <h1 class="product-detail__title">Товар 1</h1>
+
+        <p class="product-detail__description">
+          Краткое описание учебного товара. Этот товар используется в учебном
+          проекте для демонстрации структуры карточки товара в интернет-магазине.
+        </p>
+
+        <p class="product-detail__price">Цена: 1000 руб.</p>
+
+        <a class="button button--primary" href="order.html">Оформить заявку</a>
+      </div>
+
+    </section>
+
+    <section class="section">
+      <h2>Характеристики товара</h2>
+
+      <table class="specs-table">
+        <caption>Основные характеристики товара 1</caption>
+        <thead>
+          <tr>
+            <th>Параметр</th>
+            <th>Значение</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Артикул</td>
+            <td>SP-0001</td>
+          </tr>
+          <tr>
+            <td>Категория</td>
+            <td>Учебные товары</td>
+          </tr>
+          <tr>
+            <td>Цвет</td>
+            <td>Синий</td>
+          </tr>
+          <tr>
+            <td>Вес</td>
+            <td>1,2 кг</td>
+          </tr>
+          <tr>
+            <td>Гарантия</td>
+            <td>12 месяцев</td>
+          </tr>
+          <tr>
+            <td>Наличие</td>
+            <td>На складе</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Учебный проект. Все права защищены.</p>
+    <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top" type="button" aria-label="Наверх">
+    Наверх
+  </button>
+
+</body>
+</html>

@@ -267,6 +267,7 @@ a:focus-visible {
     */
 
 .product-card {
+    position: relative;
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
@@ -415,6 +416,87 @@ a:focus-visible {
 }
 
 
+/* 
+   КР1: Таблица характеристик 
+    */
+
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--space-md);
+}
+
+.specs-table caption {
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+}
+
+.specs-table th,
+.specs-table td {
+  padding: 10px 12px;
+  border: 1px solid var(--color-border);
+  text-align: left;
+}
+
+.specs-table thead th {
+  background-color: var(--color-surface);
+  font-weight: 700;
+}
+
+.specs-table tbody tr:nth-child(even) {
+  background-color: var(--color-surface);
+}
+
+/* 
+   КР1: Страница товара 
+    */
+
+.product-detail {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+.product-detail__image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+}
+
+.product-detail__title {
+  margin-top: 0;
+}
+
+.product-detail__price {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media (max-width: 800px) {
+  .product-detail {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 
+   КР1: Бейдж на карточке 
+    */
+
+.product-card__badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 4px 10px;
+  background-color: var(--color-danger);
+  color: var(--color-white);
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+}
+
 /*6. Дополнительные элементы (практика 5)
 
 
@@ -447,7 +529,8 @@ html {
   color: var(--color-primary);
 }
 
-.breadcrumbs__current::before {
+.breadcrumbs__link + .breadcrumbs__link::before,
+.breadcrumbs__link + .breadcrumbs__current::before {
   content: " / ";
   color: var(--color-muted);
 }
