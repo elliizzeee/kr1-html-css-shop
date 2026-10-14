@@ -550,6 +550,9 @@ html {
 }
 
 .catalog-filters {
+  position: sticky;
+  top: 100px;
+  align-self: start;
   grid-area: filters;
   padding: var(--space-md);
   border: 1px solid var(--color-border);
@@ -618,4 +621,45 @@ html {
   background-color: var(--color-primary-dark);
 }
 
+
+/* 
+   8 Практика
+    */
+
+.reviews-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+.review {
+  padding: var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+}
+
+.review__author {
+  margin: 0 0 var(--space-xs);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.review__rating {
+  margin: 0 0 var(--space-sm);
+  color: #f5a623;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.review__text {
+  margin: 0 0 var(--space-sm);
+  color: var(--color-text);
+}
+
+.review__date {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 13px;
+}
 
