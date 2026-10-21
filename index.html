@@ -11,40 +11,45 @@
 <body>
 
   <header class="site-header">
-  <div class="site-header__inner">
-    <a class="site-header__logo" href="index.html">ShopProject</a>
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">ShopProject</a>
 
-    <nav class="site-nav" aria-label="Основная навигация">
-      <ul class="site-nav__list">
-        <li class="site-nav__item">
-          <a class="site-nav__link site-nav__link--active" href="index.html">Главная</a>
-        </li>
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="catalog.html">Каталог</a>
-        </li>
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="contacts.html">Контакты</a>
-        </li>
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="product.html">Товар</a>
-        </li>
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="order.html">Заявка</a>
-        </li>
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="index.html#advantages">Преимущества</a>
-        </li>
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="index.html#popular">Популярные товары</a>
-        </li>
-        <li class="site-nav__item">
-          <a class="site-nav__link" href="index.html#contacts">Обратная связь</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--active" href="index.html">Главная</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="delivery.html">Доставка</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="about.html">О нас</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="contacts.html">Контакты</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="product.html">Товар</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="order.html">Заявка</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#advantages">Преимущества</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#popular">Популярные товары</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#contacts">Обратная связь</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <main>
 
@@ -74,16 +79,16 @@
   <div class="products-grid">
     <article class="product-card product-card--featured">
       <span class="product-card__badge">Хит</span>
-      <h3 class="product-card__title">Товар 1</h3>
+      <h3 class="product-card__title">Топ</h3>
       <p class="product-card__description">Краткое описание учебного товара.</p>
-      <p class="product-card__price">Цена: 1000 руб.</p>
+      <p class="product-card__price">Цена: 999 руб.</p>
       <button class="button button--primary product-card__button" type="button" data-product="Товар 1">
         Заказать
       </button>
     </article>
 
     <article class="product-card">
-      <h3 class="product-card__title">Товар 2</h3>
+      <h3 class="product-card__title">Юбка</h3>
       <p class="product-card__description">Краткое описание учебного товара.</p>
       <p class="product-card__price">Цена: 1500 руб.</p>
       <button class="button button--primary product-card__button" type="button" data-product="Товар 2">
@@ -92,9 +97,9 @@
     </article>
 
     <article class="product-card">
-      <h3 class="product-card__title">Товар 3</h3>
+      <h3 class="product-card__title">Джинсы</h3>
       <p class="product-card__description">Краткое описание учебного товара.</p>
-      <p class="product-card__price">Цена: 2000 руб.</p>
+      <p class="product-card__price">Цена: 4000 руб.</p>
       <button class="button button--primary product-card__button" type="button" data-product="Товар 3">
         Заказать
       </button>
@@ -110,6 +115,29 @@
         БЭМ-структура и адаптивная версия сайта.
       </p>
     </aside>
+    <section class="section">
+      <h2>Часто задаваемые вопросы</h2>
+      
+      <div class="faq-list">
+        <!-- Вопрос 1 -->
+        <details class="faq-item">
+          <summary class="faq-item__question">Как правильно выбрать размер?</summary>
+          <p class="faq-item__answer">Обратите внимание на таблицу размеров на странице товара. Измерьте свои параметры (грудь, талия, бедра) и сравните с данными в таблице. Если вы между размерами, рекомендуем брать больший.</p>
+        </details>
+        
+        <!-- Вопрос 2 -->
+        <details class="faq-item">
+          <summary class="faq-item__question">Из какого материала сделана одежда?</summary>
+          <p class="faq-item__answer">Состав указан в таблице характеристик. Мы используем только качественные и безопасные ткани, которые не вызывают раздражения и долго носятся.</p>
+        </details>
+        
+        <!-- Вопрос 3 -->
+        <details class="faq-item">
+          <summary class="faq-item__question">Можно ли обменять товар, если он не подошел?</summary>
+          <p class="faq-item__answer">Да, вы можете обменять товар на другой размер в течение 14 дней с момента получения, при условии, что сохранены бирки и оригинальная упаковка.</p>
+        </details>
+      </div>
+    </section>
 
   </main>
 

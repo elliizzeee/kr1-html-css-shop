@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Карточка товара учебного интернет-магазина: описание, характеристики, цена.">
-  <title>Товар 1 – Учебный интернет-магазин</title>
+  <meta name="description" content="Карточка товара: джинсы классические. Описание, характеристики, цена.">
+  <title>Джинсы – Учебный интернет-магазин</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
 </head>
@@ -16,21 +16,11 @@
 
       <nav class="site-nav" aria-label="Основная навигация">
         <ul class="site-nav__list">
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="catalog.html">Каталог</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="product.html">Товар</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="order.html">Заявка</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="contacts.html">Контакты</a>
-          </li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="reviews.html">Отзывы</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
     </div>
@@ -41,30 +31,27 @@
     <nav class="breadcrumbs" aria-label="Хлебные крошки">
       <a class="breadcrumbs__link" href="index.html">Главная</a>
       <a class="breadcrumbs__link" href="catalog.html">Каталог</a>
-      <span class="breadcrumbs__current">Товар 1</span>
+      <span class="breadcrumbs__current">Джинсы</span>
     </nav>
 
     <section class="section product-detail">
 
       <div class="product-detail__media">
-        <img
-          class="product-detail__image"
-          src="images/placeholder.svg"
-          alt="Изображение товара 1"
-          width="400"
-          height="300"
-        >
+        <!-- Эмодзи-заглушка, так как картинки не грузятся -->
+        <div class="product-card__image-wrapper" style="height: 300px; border: 1px solid var(--color-border); border-radius: var(--radius-md);">
+            <span class="product-card__emoji" style="font-size: 150px;">👖</span>
+        </div>
       </div>
 
       <div class="product-detail__info">
-        <h1 class="product-detail__title">Товар 1</h1>
+        <h1 class="product-detail__title">Джинсы</h1>
 
         <p class="product-detail__description">
-          Краткое описание учебного товара. Этот товар используется в учебном
-          проекте для демонстрации структуры карточки товара в интернет-магазине.
+          Классические синие джинсы прямого кроя. Отличный выбор для повседневной носки. 
+          Плотный деним, удобная посадка.
         </p>
 
-        <p class="product-detail__price">Цена: 1000 руб.</p>
+        <p class="product-detail__price">Цена: 4000 руб.</p>
 
         <a class="button button--primary" href="order.html">Оформить заявку</a>
       </div>
@@ -73,9 +60,8 @@
 
     <section class="section">
       <h2>Характеристики товара</h2>
-
       <table class="specs-table">
-        <caption>Основные характеристики товара 1</caption>
+        <caption>Основные характеристики</caption>
         <thead>
           <tr>
             <th>Параметр</th>
@@ -83,118 +69,71 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Артикул</td>
-            <td>SP-0001</td>
-          </tr>
-          <tr>
-            <td>Категория</td>
-            <td>Учебные товары</td>
-          </tr>
-          <tr>
-            <td>Цвет</td>
-            <td>Синий</td>
-          </tr>
-          <tr>
-            <td>Вес</td>
-            <td>1,2 кг</td>
-          </tr>
-          <tr>
-            <td>Гарантия</td>
-            <td>12 месяцев</td>
-          </tr>
-          <tr>
-            <td>Наличие</td>
-            <td>На складе</td>
-          </tr>
+          <tr><td>Бренд</td><td>ShopProject</td></tr>
+          <tr><td>Страна производства</td><td>Россия</td></tr>
+          <tr><td>Состав</td><td>98% хлопок, 2% эластан</td></tr>
+          <tr><td>Сезон</td><td>Всесезонный</td></tr>
+          <tr><td>Цвет</td><td>Синий (Indigo)</td></tr>
+          <tr><td>Уход</td><td>Машинная стирка при 30°</td></tr>
         </tbody>
       </table>
     </section>
-<section class="section">
-  <h2>Дополнительные характеристики</h2>
 
-  <table class="specs-table">
-    <caption>Расширенные характеристики товара 1</caption>
-    <thead>
-      <tr>
-        <th>Параметр</th>
-        <th>Значение</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Материал</td>
-        <td>Пластик, металл</td>
-      </tr>
-      <tr>
-        <td>Размеры</td>
-        <td>20 × 15 × 5 см</td>
-      </tr>
-      <tr>
-        <td>Комплектация</td>
-        <td>Товар, инструкция, упаковка</td>
-      </tr>
-      <tr>
-        <td>Страна производства</td>
-        <td>Россия</td>
-      </tr>
-      <tr>
-        <td>Срок гарантии</td>
-        <td>12 месяцев</td>
-      </tr>
-      <tr>
-        <td>Условия хранения</td>
-        <td>От 0 до +25 °C, влажность до 70%</td>
-      </tr>
-      <tr>
-        <td>Сертификация</td>
-        <td>ГОСТ Р</td>
-      </tr>
-      <tr>
-        <td>Способ доставки</td>
-        <td>Курьер, почта, самовывоз</td>
-      </tr>
-    </tbody>
-  </table>
-</section>
-        <section class="section">
-  <h2>Отзывы покупателей</h2>
+    <section class="section">
+      <h2>Размерная сетка</h2>
+      <table class="specs-table">
+        <caption>Таблица размеров (Джинсы)</caption>
+        <thead>
+          <tr>
+            <th>Размер</th>
+            <th>Обхват талии (см)</th>
+            <th>Обхват бедер (см)</th>
+            <th>Длина по боковому шву (см)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>S (42-44)</td><td>64-68</td><td>90-94</td><td>100</td></tr>
+          <tr><td>M (46-48)</td><td>68-72</td><td>94-98</td><td>102</td></tr>
+          <tr><td>L (50-52)</td><td>72-76</td><td>98-102</td><td>104</td></tr>
+          <tr><td>XL (54-56)</td><td>76-80</td><td>102-106</td><td>106</td></tr>
+        </tbody>
+      </table>
+    </section>
 
-  <div class="reviews-list">
+    <section class="section">
+      <h2>Отзывы покупателей</h2>
 
-    <article class="review">
-      <h3 class="review__author">Иван Петров</h3>
-      <p class="review__rating">★★★★★</p>
-      <p class="review__text">
-        Отличный товар! Всё пришло быстро, качество на высоте.
-        Рекомендую всем.
-      </p>
-      <p class="review__date">15 сентября 2026</p>
-    </article>
+      <div class="reviews-list">
 
-    <article class="review">
-      <h3 class="review__author">Мария Смирнова</h3>
-      <p class="review__rating">★★★★☆</p>
-      <p class="review__text">
-        Хороший товар по приятной цене. Единственное — упаковка
-        немного помялась при доставке.
-      </p>
-      <p class="review__date">2 сентября 2026</p>
-    </article>
+        <article class="review">
+          <h3 class="review__author">Анна</h3>
+          <p class="review__rating">★★★★★</p>
+          <p class="review__text">
+            Идеально! Качество супер, доставка быстрая.
+          </p>
+          <p class="review__date">10 октября 2026</p>
+        </article>
 
-    <article class="review">
-      <h3 class="review__author">Алексей Иванов</h3>
-      <p class="review__rating">★★★★★</p>
-      <p class="review__text">
-        Заказывал в подарок — всё понравилось. Спасибо магазину
-        за оперативность!
-      </p>
-      <p class="review__date">27 августа 2026</p>
-    </article>
+        <article class="review">
+          <h3 class="review__author">Мария</h3>
+          <p class="review__rating">★★★★☆</p>
+          <p class="review__text">
+            Супер, но немного маломерят. Берите на один размер больше.
+          </p>
+          <p class="review__date">5 октября 2026</p>
+        </article>
 
-  </div>
-</section>
+        <article class="review">
+          <h3 class="review__author">Екатерина</h3>
+          <p class="review__rating">★★★★★</p>
+          <p class="review__text">
+            Отличное качество! Пришло быстро, размер полностью совпал. Буду заказывать еще.
+          </p>
+          <p class="review__date">1 октября 2026</p>
+        </article>
 
+      </div>
+    </section>
 
   </main>
 
