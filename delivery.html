@@ -6,6 +6,8 @@
   <meta name="description" content="Условия доставки и оплаты в интернет-магазине одежды.">
   <title>Доставка и оплата – Учебный интернет-магазин</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
   <script src="js/main.js" defer></script>
 </head>
 <body>
@@ -38,32 +40,35 @@
 
     <section class="section">
       <h2>Способы доставки</h2>
-      <table class="specs-table">
-        <thead>
-          <tr>
-            <th>Способ</th>
-            <th>Сроки</th>
-            <th>Стоимость</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Курьер по городу</td>
-            <td>1-2 дня</td>
-            <td>300 руб. (бесплатно от 5000 руб.)</td>
-          </tr>
-          <tr>
-            <td>Почта России</td>
-            <td>3-7 дней</td>
-            <td>от 250 руб.</td>
-          </tr>
-          <tr>
-            <td>Самовывоз из пункта выдачи</td>
-            <td>2-3 дня</td>
-            <td>Бесплатно</td>
-          </tr>
-        </tbody>
-      </table>
+      <!-- Добавлена обертка table-wrapper для адаптивности (Этап 14) -->
+      <div class="table-wrapper">
+        <table class="specs-table">
+          <thead>
+            <tr>
+              <th>Способ</th>
+              <th>Сроки</th>
+              <th>Стоимость</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Курьер по городу</td>
+              <td>1-2 дня</td>
+              <td>300 руб. (бесплатно от 5000 руб.)</td>
+            </tr>
+            <tr>
+              <td>Почта России</td>
+              <td>3-7 дней</td>
+              <td>от 250 руб.</td>
+            </tr>
+            <tr>
+              <td>Самовывоз из пункта выдачи</td>
+              <td>2-3 дня</td>
+              <td>Бесплатно</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <section class="section">

@@ -6,214 +6,207 @@
   <meta name="description" content="Каталог товаров учебного интернет-магазина.">
   <title>Каталог товаров – Учебный интернет-магазин</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
   <script src="js/main.js" defer></script>
 </head>
 <body>
   <header class="site-header">
     <div class="site-header__inner">
       <a class="site-header__logo" href="index.html">ShopProject</a>
-
       <nav class="site-nav" aria-label="Основная навигация">
         <ul class="site-nav__list">
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link site-nav__link--active" href="catalog.html">Каталог</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="contacts.html">Контакты</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="index.html#advantages">Преимущества</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="index.html#popular">Популярные товары</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="index.html#contacts">Обратная связь</a>
-          </li>
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-  <nav class="breadcrumbs" aria-label="Хлебные крошки">
-    <a class="breadcrumbs__link" href="index.html">Главная</a>
-    <span class="breadcrumbs__current">Каталог</span>
-  </nav>
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <a class="breadcrumbs__link" href="index.html">Главная</a>
+      <span class="breadcrumbs__current">Каталог</span>
+    </nav>
 
-  <section class="section">
-    <h1>Каталог товаров</h1>
-    <p>
-      На этой странице представлен учебный каталог товаров.
-      В дальнейшем здесь будут добавлены фильтры, сортировка и более подробные карточки.
-    </p>
-  </section>
-
-  <section class="catalog-layout">
-    <aside class="catalog-filters">
-      <h2>Фильтры</h2>
-
-      <form class="filters-form" action="#" method="get">
-        <fieldset>
-          <legend>Категория</legend>
-
-          <label>
-            <input type="checkbox" name="category" value="all">
-            Все товары
-          </label>
-
-          <label>
-            <input type="checkbox" name="category" value="popular">
-            Популярные
-          </label>
-
-          <label>
-            <input type="checkbox" name="category" value="new">
-            Новинки
-          </label>
-        </fieldset>
-
-        <fieldset>
-          <legend>Цена</legend>
-
-          <label for="price-from">От</label>
-          <input id="price-from" name="price-from" type="number" min="0" placeholder="0">
-
-          <label for="price-to">До</label>
-          <input id="price-to" name="price-to" type="number" min="0" placeholder="5000">
-        </fieldset>
-
-        <button class="button button--primary" type="submit">Применить</button>      </form>
-    </aside>
-
-    <section class="catalog-products">
-      <h2>Список товаров</h2>
-
-      <div class="products-grid">
-
-        <!-- 1. Топ -->
-        <article class="product-card">
-          <div class="product-card__image-wrapper">
-            <span class="product-card__emoji">👚</span>
-          </div>
-          <div class="product-card__content">
-            <h3 class="product-card__title">Топ</h3>
-            <p class="product-card__description">Удобный топ для повседневной носки.</p>
-            <p class="product-card__price">Цена: 999 руб.</p>
-            <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
-          </div>
-        </article>
-
-        <!-- 2. Юбка -->
-        <article class="product-card">
-          <div class="product-card__image-wrapper">
-            <span class="product-card__emoji">👗</span>
-          </div>
-          <div class="product-card__content">
-            <h3 class="product-card__title">Юбка</h3>
-            <p class="product-card__description">Летняя юбка свободного кроя.</p>
-            <p class="product-card__price">Цена: 1500 руб.</p>
-            <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
-          </div>
-        </article>
-
-        <!-- 3. Джинсы -->
-        <article class="product-card">
-          <div class="product-card__image-wrapper">
-            <span class="product-card__emoji">👖</span>
-          </div>
-          <div class="product-card__content">
-            <h3 class="product-card__title">Джинсы</h3>
-            <p class="product-card__description">Классические синие джинсы.</p>
-            <p class="product-card__price">Цена: 4000 руб.</p>
-            <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
-          </div>
-        </article>
-
-        <!-- 4. Шорты -->
-        <article class="product-card">
-          <div class="product-card__image-wrapper">
-            <span class="product-card__emoji">🩳</span>
-          </div>
-          <div class="product-card__content">
-            <h3 class="product-card__title">Шорты</h3>
-            <p class="product-card__description">Спортивные шорты.</p>
-            <p class="product-card__price">Цена: 1500 руб.</p>
-            <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
-          </div>
-        </article>
-
-        <!-- 5. Носки -->
-        <article class="product-card">
-          <div class="product-card__image-wrapper">
-            <span class="product-card__emoji">🧦</span>
-          </div>
-          <div class="product-card__content">
-            <h3 class="product-card__title">Носки</h3>
-            <p class="product-card__description">Хлопковые носки (3 пары).</p>
-            <p class="product-card__price">Цена: 500 руб.</p>
-            <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
-          </div>
-        </article>
-
-        <!-- 6. Рубашка -->
-        <article class="product-card">
-          <div class="product-card__image-wrapper">
-            <span class="product-card__emoji">👔</span>
-          </div>
-          <div class="product-card__content">
-            <h3 class="product-card__title">Рубашка</h3>
-            <p class="product-card__description">Классическая рубашка.</p>
-            <p class="product-card__price">Цена: 3500 руб.</p>
-            <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
-          </div>
-        </article>
-
-        <!-- 7. Лонгслив -->
-        <article class="product-card">
-          <div class="product-card__image-wrapper">
-            <span class="product-card__emoji">🧥</span>
-          </div>
-          <div class="product-card__content">
-            <h3 class="product-card__title">Лонгслив</h3>
-            <p class="product-card__description">Лонгслив с длинным рукавом.</p>
-            <p class="product-card__price">Цена: 2300 руб.</p>
-            <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
-          </div>
-        </article>
-
-        <!-- 8. Кардиган -->
-        <article class="product-card">
-          <div class="product-card__image-wrapper">
-            <span class="product-card__emoji">🧶</span>
-          </div>
-          <div class="product-card__content">
-            <h3 class="product-card__title">Кардиган</h3>
-            <p class="product-card__description">Теплый вязаный кардиган.</p>
-            <p class="product-card__price">Цена: 3000 руб.</p>
-            <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
-          </div>
-        </article>
-
-        <!-- 9. Футболка -->
-        <article class="product-card">
-          <div class="product-card__image-wrapper">
-            <span class="product-card__emoji">👕</span>
-          </div>
-          <div class="product-card__content">
-            <h3 class="product-card__title">Футболка</h3>
-            <p class="product-card__description">Базовая футболка.</p>
-            <p class="product-card__price">Цена: 1400 руб.</p>
-            <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
-          </div>
-        </article>
-      </div>
+    <section class="section">
+      <h1>Каталог товаров</h1>
+      <p>На этой странице представлен учебный каталог товаров.</p>
     </section>
-  </section>
-</main>
+
+    <section class="catalog-layout">
+      <aside class="catalog-filters">
+        <h2>Фильтры</h2>
+        <form class="filters-form" action="#" method="get">
+          <fieldset>
+            <legend>Категория</legend>
+            <label><input type="checkbox" name="category" value="all"> Все товары</label>
+            <label><input type="checkbox" name="category" value="popular"> Популярные</label>
+            <label><input type="checkbox" name="category" value="new"> Новинки</label>
+          </fieldset>
+          <fieldset>
+            <legend>Цена</legend>
+            <label for="price-from">От</label>
+            <input id="price-from" name="price-from" type="number" min="0" placeholder="0">
+            <label for="price-to">До</label>
+            <input id="price-to" name="price-to" type="number" min="0" placeholder="5000">
+          </fieldset>
+          <button class="button button--primary" type="submit">Применить</button>
+        </form>
+      </aside>
+
+      <section class="catalog-products">
+        <h2>Список товаров</h2>
+
+        <div class="products-grid">
+          <!-- 1. Топ -->
+          <article class="product-card">
+            <div class="product-card__image-wrapper">
+              <picture>
+                <source srcset="images/топ.webp" type="image/webp">
+                <img src="images/топ.webp" srcset="images/топ.webp 640w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 25vw" alt="Топ" width="640" height="360" loading="lazy" class="product-card__image">
+              </picture>
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Топ</h3>
+              <p class="product-card__description">Удобный топ для повседневной носки.</p>
+              <p class="product-card__price">Цена: 999 руб.</p>
+              <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+            </div>
+          </article>
+
+          <!-- 2. Юбка -->
+          <article class="product-card">
+            <div class="product-card__image-wrapper">
+              <picture>
+                <source srcset="images/юбка.webp" type="image/webp">
+                <img src="images/юбка.webp" srcset="images/юбка.webp 640w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 25vw" alt="Юбка" width="640" height="360" loading="lazy" class="product-card__image">
+              </picture>
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Юбка</h3>
+              <p class="product-card__description">Летняя юбка свободного кроя.</p>
+              <p class="product-card__price">Цена: 1500 руб.</p>
+              <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+            </div>
+          </article>
+
+          <!-- 3. Джинсы -->
+          <article class="product-card">
+            <div class="product-card__image-wrapper">
+              <picture>
+                <source srcset="images/штаны.webp" type="image/webp">
+                <img src="images/штаны.webp" srcset="images/штаны.webp 640w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 25vw" alt="Джинсы" width="640" height="360" loading="lazy" class="product-card__image">
+              </picture>
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Джинсы</h3>
+              <p class="product-card__description">Классические синие джинсы.</p>
+              <p class="product-card__price">Цена: 4000 руб.</p>
+              <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+            </div>
+          </article>
+
+          <!-- 4. Шорты -->
+          <article class="product-card">
+            <div class="product-card__image-wrapper">
+              <picture>
+                <source srcset="images/шорты.webp" type="image/webp">
+                <img src="images/шорты.webp" srcset="images/шорты.webp 640w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 25vw" alt="Шорты" width="640" height="360" loading="lazy" class="product-card__image">
+              </picture>
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Шорты</h3>
+              <p class="product-card__description">Спортивные шорты.</p>
+              <p class="product-card__price">Цена: 1500 руб.</p>
+              <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+            </div>
+          </article>
+
+          <!-- 5. Носки -->
+          <article class="product-card">
+            <div class="product-card__image-wrapper">
+              <picture>
+                <source srcset="images/носки.webp" type="image/webp">
+                <img src="images/носки.webp" srcset="images/носки.webp 640w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 25vw" alt="Носки" width="640" height="360" loading="lazy" class="product-card__image">
+              </picture>
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Носки</h3>
+              <p class="product-card__description">Хлопковые носки (3 пары).</p>
+              <p class="product-card__price">Цена: 500 руб.</p>
+              <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+            </div>
+          </article>
+
+          <!-- 6. Рубашка -->
+          <article class="product-card">
+            <div class="product-card__image-wrapper">
+              <picture>
+                <source srcset="images/рубашка.webp" type="image/webp">
+                <img src="images/рубашка.webp" srcset="images/рубашка.webp 640w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 25vw" alt="Рубашка" width="640" height="360" loading="lazy" class="product-card__image">
+              </picture>
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Рубашка</h3>
+              <p class="product-card__description">Классическая рубашка.</p>
+              <p class="product-card__price">Цена: 3500 руб.</p>
+              <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+            </div>
+          </article>
+
+          <!-- 7. Лонгслив -->
+          <article class="product-card">
+            <div class="product-card__image-wrapper">
+              <picture>
+                <source srcset="images/кофта.webp" type="image/webp">
+                <img src="images/кофта.webp" srcset="images/кофта.webp 640w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 25vw" alt="Лонгслив" width="640" height="360" loading="lazy" class="product-card__image">
+              </picture>
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Лонгслив</h3>
+              <p class="product-card__description">Лонгслив с длинным рукавом.</p>
+              <p class="product-card__price">Цена: 2300 руб.</p>
+              <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+            </div>
+          </article>
+
+          <!-- 8. Кардиган -->
+          <article class="product-card">
+            <div class="product-card__image-wrapper">
+              <picture>
+                <source srcset="images/кардиган.webp" type="image/webp">
+                <img src="images/кардиган.webp" srcset="images/кардиган.webp 640w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 25vw" alt="Кардиган" width="640" height="360" loading="lazy" class="product-card__image">
+              </picture>
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Кардиган</h3>
+              <p class="product-card__description">Теплый вязаный кардиган.</p>
+              <p class="product-card__price">Цена: 3000 руб.</p>
+              <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+            </div>
+          </article>
+
+          <!-- 9. Футболка -->
+          <article class="product-card">
+            <div class="product-card__image-wrapper">
+              <picture>
+                <source srcset="images/футболка.webp" type="image/webp">
+                <img src="images/футболка.webp" srcset="images/футболка.webp 640w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 25vw" alt="Футболка" width="640" height="360" loading="lazy" class="product-card__image">
+              </picture>
+            </div>
+            <div class="product-card__content">
+              <h3 class="product-card__title">Футболка</h3>
+              <p class="product-card__description">Базовая футболка.</p>
+              <p class="product-card__price">Цена: 1400 руб.</p>
+              <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2026 Учебный проект. Все права защищены.</p>

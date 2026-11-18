@@ -6,6 +6,8 @@
   <meta name="description" content="Учебный интернет-магазин: главная страница проекта.">
   <title>Главная – Учебный интернет-магазин</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
   <script src="js/main.js" defer></script>
 </head>
 <body>
@@ -74,38 +76,59 @@
     </section>
 
     <section class="section" id="popular">
-  <h2>Популярные товары</h2>
+      <h2>Популярные товары</h2>
 
-  <div class="products-grid">
-    <article class="product-card product-card--featured">
-      <span class="product-card__badge">Хит</span>
-      <h3 class="product-card__title">Топ</h3>
-      <p class="product-card__description">Краткое описание учебного товара.</p>
-      <p class="product-card__price">Цена: 999 руб.</p>
-      <button class="button button--primary product-card__button" type="button" data-product="Товар 1">
-        Заказать
-      </button>
-    </article>
+      <div class="products-grid">
+        <!-- Товар 1: Топ -->
+        <article class="product-card product-card--featured">
+          <span class="product-card__badge">Хит</span>
+          <div class="product-card__image-wrapper">
+            <picture>
+              <source srcset="images/топ.webp" type="image/webp">
+              <img src="images/топ.webp" srcset="images/топ.webp 640w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 25vw" alt="Топ" width="640" height="360" loading="lazy" class="product-card__image">
+            </picture>
+          </div>
+          <h3 class="product-card__title">Топ</h3>
+          <p class="product-card__description">Краткое описание учебного товара.</p>
+          <p class="product-card__price">Цена: 999 руб.</p>
+          <button class="button button--primary product-card__button" type="button" data-product="Товар 1">
+            Заказать
+          </button>
+        </article>
 
-    <article class="product-card">
-      <h3 class="product-card__title">Юбка</h3>
-      <p class="product-card__description">Краткое описание учебного товара.</p>
-      <p class="product-card__price">Цена: 1500 руб.</p>
-      <button class="button button--primary product-card__button" type="button" data-product="Товар 2">
-        Заказать
-      </button>
-    </article>
+        <!-- Товар 2: Юбка -->
+        <article class="product-card">
+          <div class="product-card__image-wrapper">
+            <picture>
+              <source srcset="images/юбка.webp" type="image/webp">
+              <img src="images/юбка.webp" srcset="images/юбка.webp 640w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 25vw" alt="Юбка" width="640" height="360" loading="lazy" class="product-card__image">
+            </picture>
+          </div>
+          <h3 class="product-card__title">Юбка</h3>
+          <p class="product-card__description">Краткое описание учебного товара.</p>
+          <p class="product-card__price">Цена: 1500 руб.</p>
+          <button class="button button--primary product-card__button" type="button" data-product="Товар 2">
+            Заказать
+          </button>
+        </article>
 
-    <article class="product-card">
-      <h3 class="product-card__title">Джинсы</h3>
-      <p class="product-card__description">Краткое описание учебного товара.</p>
-      <p class="product-card__price">Цена: 4000 руб.</p>
-      <button class="button button--primary product-card__button" type="button" data-product="Товар 3">
-        Заказать
-      </button>
-    </article>
-  </div>
-</section>
+        <!-- Товар 3: Джинсы -->
+        <article class="product-card">
+          <div class="product-card__image-wrapper">
+            <picture>
+              <source srcset="images/штаны.webp" type="image/webp">
+              <img src="images/штаны.webp" srcset="images/штаны.webp 640w" sizes="(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 25vw" alt="Джинсы" width="640" height="360" loading="lazy" class="product-card__image">
+            </picture>
+          </div>
+          <h3 class="product-card__title">Джинсы</h3>
+          <p class="product-card__description">Краткое описание учебного товара.</p>
+          <p class="product-card__price">Цена: 4000 руб.</p>
+          <button class="button button--primary product-card__button" type="button" data-product="Товар 3">
+            Заказать
+          </button>
+        </article>
+      </div>
+    </section>
 
     <aside class="aside-info">
       <h2>Информация для студентов</h2>
@@ -115,6 +138,7 @@
         БЭМ-структура и адаптивная версия сайта.
       </p>
     </aside>
+
     <section class="section">
       <h2>Часто задаваемые вопросы</h2>
       

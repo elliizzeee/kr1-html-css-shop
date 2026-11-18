@@ -6,6 +6,7 @@
   <meta name="description" content="Карточка товара: джинсы классические. Описание, характеристики, цена.">
   <title>Джинсы – Учебный интернет-магазин</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
   <script src="js/main.js" defer></script>
 </head>
 <body>
@@ -13,7 +14,6 @@
   <header class="site-header">
     <div class="site-header__inner">
       <a class="site-header__logo" href="index.html">ShopProject</a>
-
       <nav class="site-nav" aria-label="Основная навигация">
         <ul class="site-nav__list">
           <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
@@ -37,9 +37,12 @@
     <section class="section product-detail">
 
       <div class="product-detail__media">
-        <!-- Эмодзи-заглушка, так как картинки не грузятся -->
-        <div class="product-card__image-wrapper" style="height: 300px; border: 1px solid var(--color-border); border-radius: var(--radius-md);">
-            <span class="product-card__emoji" style="font-size: 150px;">👖</span>
+        <div class="product-card__image-wrapper" style="height: 300px;">
+          <!-- Твоя картинка штаны.webp -->
+          <picture>
+            <source srcset="images/штаны.webp" type="image/webp">
+            <img src="images/штаны.webp" alt="Джинсы" width="640" height="360" loading="lazy" class="product-card__image">
+          </picture>
         </div>
       </div>
 
@@ -60,44 +63,50 @@
 
     <section class="section">
       <h2>Характеристики товара</h2>
-      <table class="specs-table">
-        <caption>Основные характеристики</caption>
-        <thead>
-          <tr>
-            <th>Параметр</th>
-            <th>Значение</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Бренд</td><td>ShopProject</td></tr>
-          <tr><td>Страна производства</td><td>Россия</td></tr>
-          <tr><td>Состав</td><td>98% хлопок, 2% эластан</td></tr>
-          <tr><td>Сезон</td><td>Всесезонный</td></tr>
-          <tr><td>Цвет</td><td>Синий (Indigo)</td></tr>
-          <tr><td>Уход</td><td>Машинная стирка при 30°</td></tr>
-        </tbody>
-      </table>
+      <!-- Обертка для адаптивности таблицы -->
+      <div class="table-wrapper">
+        <table class="specs-table">
+          <caption>Основные характеристики</caption>
+          <thead>
+            <tr>
+              <th>Параметр</th>
+              <th>Значение</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Бренд</td><td>ShopProject</td></tr>
+            <tr><td>Страна производства</td><td>Россия</td></tr>
+            <tr><td>Состав</td><td>98% хлопок, 2% эластан</td></tr>
+            <tr><td>Сезон</td><td>Всесезонный</td></tr>
+            <tr><td>Цвет</td><td>Синий (Indigo)</td></tr>
+            <tr><td>Уход</td><td>Машинная стирка при 30°</td></tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <section class="section">
       <h2>Размерная сетка</h2>
-      <table class="specs-table">
-        <caption>Таблица размеров (Джинсы)</caption>
-        <thead>
-          <tr>
-            <th>Размер</th>
-            <th>Обхват талии (см)</th>
-            <th>Обхват бедер (см)</th>
-            <th>Длина по боковому шву (см)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>S (42-44)</td><td>64-68</td><td>90-94</td><td>100</td></tr>
-          <tr><td>M (46-48)</td><td>68-72</td><td>94-98</td><td>102</td></tr>
-          <tr><td>L (50-52)</td><td>72-76</td><td>98-102</td><td>104</td></tr>
-          <tr><td>XL (54-56)</td><td>76-80</td><td>102-106</td><td>106</td></tr>
-        </tbody>
-      </table>
+      <!-- Обертка для адаптивности таблицы -->
+      <div class="table-wrapper">
+        <table class="specs-table">
+          <caption>Таблица размеров (Джинсы)</caption>
+          <thead>
+            <tr>
+              <th>Размер</th>
+              <th>Обхват талии (см)</th>
+              <th>Обхват бедер (см)</th>
+              <th>Длина по боковому шву (см)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>S (42-44)</td><td>64-68</td><td>90-94</td><td>100</td></tr>
+            <tr><td>M (46-48)</td><td>68-72</td><td>94-98</td><td>102</td></tr>
+            <tr><td>L (50-52)</td><td>72-76</td><td>98-102</td><td>104</td></tr>
+            <tr><td>XL (54-56)</td><td>76-80</td><td>102-106</td><td>106</td></tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <section class="section">
